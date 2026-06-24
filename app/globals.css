@@ -24,3 +24,72 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* =====================================
+   GENERAL FADE UP ANIMATION
+===================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* =====================================
+   HERO BACKGROUND ZOOM
+===================================== */
+
+@keyframes zoomHero {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.zoom-hero {
+  animation: zoomHero 8s linear infinite;
+}
+
+/* =====================================
+   HERO CONTENT ANIMATION
+===================================== */
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  opacity: 1;
+  animation: fadeHero 0.8s ease forwards;
+}
+
+.hero-subtitle {
+  opacity: 1;
+  animation: fadeHero 0.8s ease 0.2s forwards;
+}
+
+.hero-badges {
+  opacity: 1;
+  animation: fadeHero 0.8s ease 0.4s forwards;
+}
