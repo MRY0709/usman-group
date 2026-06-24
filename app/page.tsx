@@ -1,6 +1,6 @@
 import Navbar from "../src/components/layout/Navbar";
 import Hero from "../src/components/home/Hero";
-import Stats from "../src/components/home/Stats";
+//import Stats from "../src/components/home/Stats";
 import About from "../src/components/home/About";
 import RentalCategories from "../src/components/home/RentalCategories";
 import WhyChooseUs from "../src/components/home/WhyChooseUs";
@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
       <About />
       <RentalCategories />
       <WhyChooseUs />
